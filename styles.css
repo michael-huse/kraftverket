@@ -158,7 +158,6 @@ header {
   }
 
   .underoverskrift {
-    margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
   }
@@ -170,6 +169,9 @@ header {
   }
 
 
+  .mb-4 {
+    padding-bottom: 3%;
+  }
   
   footer {
     background-color: #333;
