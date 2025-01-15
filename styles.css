@@ -1,0 +1,183 @@
+/* Fonts and Colors */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+ #nav-logo{
+    display: block;
+    width: 200px; /* Set the width */
+    height: auto; /* Set the height */
+  }
+
+
+  #nav-logo-collapsed {
+    display: none;
+  }
+  
+
+  #about img {
+    width: 90%; /* Gjør bildet 90% av containerens bredde */
+    margin-left: auto; /* Flytter bildet litt inn fra venstre */
+    margin-right: auto; /* Sentraliserer eller gir innrykk fra høyre */
+    display: block; /* Sikrer at margin fungerer */
+  }
+
+  
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(255, 149, 0, 0.1), rgba(255, 255, 255, 1));
+  }
+
+ 
+ 
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+  }
+  
+  /* Flexbox for social icons */
+  .navbar-nav .nav-item i {
+    margin: 20px; /* Add space between icons */
+    }
+    .navbar-nav .nav-item:last-child {
+      margin-left:50px;
+    }
+
+    .navbar-nav .nav-item:last-child :hover {
+      color: #007bff;  
+    }
+ 
+
+/* Justering for små skjermer */
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 20px; /* Legger til avstand mellom elementene */
+  }
+
+  .navbar-nav :not(:nth-child(5)) {
+    text-align: center; /* Sentraliserer teksten */
+    display: flex; 
+    justify-content: center; /* Sentrer ikonene på små skjermer */
+}
+  .navbar-collapse {
+    position: fixed; /* Fikser plasseringen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fyll hele bredden */
+    height: 100vh; /* Fyll hele skjermhøyden */
+    display: flex; /* Bruk flex for sentrering */
+    justify-content: center; /* Horisontalt sentrert */
+    align-items: center; /* Vertikalt sentrert */
+    background-color: rgba(255, 255, 255, 0.95); /* Legger til en hvit bakgrunn med litt transparens */
+    z-index: 1050; /* Sørger for at menyen vises på toppen */
+  }
+
+  .navbar-nav .nav-item:last-child {
+    display: flex; 
+    justify-content: center; /* Sentrer ikonene på små skjermer */
+    gap: 15px; /* Jevn avstand */
+    margin-left: 0; /* Fjern unødvendig margin */
+  }
+
+  #nav-logo{
+    display: none;
+  }
+
+  #nav-logo-collapsed {
+    display: inline;
+    justify-self:right;
+    padding-left: 15%;
+    width: 100px;
+  }
+
+  .navbar-nav .nav-item i {
+    display: flex; 
+    justify-content: center; /* Sentrer ikonene på små skjermer */
+  }
+}
+
+
+.nav-link:hover {
+    color: #EEBAE1;   
+}
+
+/* For the hamburger menu (when collapsed) */
+.navbar-toggler {
+  position: absolute; /* Plasseres på toppen av skjermen */
+  right: 20px;
+  z-index: 1100; /* Alltid synlig over menyen */
+  border: none;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Sentrerer tekst horisontalt */
+  justify-content: center; /* Sentrerer tekst vertikalt */
+  margin-top: 150px;
+  height: 300px;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color:#333;
+
+}
+
+    .bg-light {
+        background-color: transparent !important; /* Remove default background color */
+        
+    }
+
+
+  
+  .lead {
+    font-size: 0.9rem;
+    width: 1000px;
+    text-align: left;
+    max-width: 100%; /* Restrict container width */
+    width: auto; /* Let the container adjust */
+
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+  }
+  
+  .card {
+    background-color: white;
+    border: none;
+  }
+  
+  .btn {
+    background-color:#ffffff;
+    border-style: solid;
+    border-color: black;
+    color: black;
+  }
+
+  .btn:hover {
+    background-color:#d9c470;
+    border: none;
+  }
+  
+ 

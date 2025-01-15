@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kraftverket</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/62c4e322ec.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+ <!-- Navbar -->
+ <div class="grid-container">
+  <div class="grid-item">
+    <img src="media/logo.png" alt="Logo" id="nav-logo">
+    <img src="media/logoCollapsed.png" alt="logo" id="nav-logo-collapsed">
+  </div>
+  <div class="grid-item">
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#home" class="nav-link active">Hjem</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Om</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Tjenester</a></li>
+          <li class="nav-item"><a class="nav-link" href="#artikler">Artikler</a></li>
+          <li class="nav-item">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-regular fa-envelope"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+</div>
+
+  <!-- Hero Section -->
+  <header class="text-center py-5">
+    <div class="container-box">
+      <p class="lead"> -  bare 30% av alle normenn er medlem på treningssenter. 
+        Vi ønsker å gjøre et løft i folkehelsen og vi når ut til nordmenn der de er - på jobb. "   </p>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="/media/officestretch.jpeg" alt="Group workout" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Om oss</h2>
+        <p>Hei, vi er kraftverket! Med 10 års erfaring innen trening, gruppetrening og helse, har vi spesialisert oss i å tilpasse program som skaper sunnere, sterkere og mer sammensveisede team.
+         Programmene våre er laget med tanke på dine ansatte, deres lokaler, behov og tilgengelig utstyr. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Hva vi tilbyr</h2>
+      <p class="mb-4">Vi leverer behovspaserte skreddersydde planer for bedrifter, med fokus på helse, velvære og samhold.</p>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm rounded">
+            <div class="card-body">
+              <h5 class="card-title">Gruppetreninger</h5>
+              <p class="card-text">Morsomme, motiverende treninger tilpasset kontorlokaler eller tilhørende treningslokaler.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm rounded">
+            <div class="card-body">
+              <h5 class="card-title">Tøy og fin roen</h5>
+              <p class="card-text">Rolige økter som hindrer smerte, gir energi og velvære.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card shadow-sm rounded">
+            <div class="card-body">
+              <h5 class="card-title">Helse  veiledning</h5>
+              <p class="card-text">Sammen utarbeider vi en større, helhetlig plan for helsen til dine ansatte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center">Kontakt oss</h2>
+    <p class="text-center">La oss samarbeide for å lage en sunnere arbeidsplass!</p>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Ditt navn</label>
+        <input type="text" class="form-control rounded" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-post</label>
+        <input type="email" class="form-control rounded" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Melding</label>
+        <textarea class="form-control rounded" id="message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send mail</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>"For et sunnere, sterkere og mer sammensveiset arbeidsmiljø!</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
