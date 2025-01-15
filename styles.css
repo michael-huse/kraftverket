@@ -130,13 +130,12 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Sentrerer tekst horisontalt */
+
   justify-content: center; /* Sentrerer tekst vertikalt */
-  margin-top: 150px;
+  margin-top: 100px;
   height: 300px;
   color: #ffffff;
   padding: 2rem;
-  text-align: center;
   font-family: 'Poppins', sans-serif;
   background-color:#333;
 
@@ -157,6 +156,20 @@ header {
     width: auto; /* Let the container adjust */
 
   }
+
+  .underoverskrift {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .signature {
+    margin-top: 5%;
+    text-align: left;
+    size: 2px;
+  }
+
+
   
   footer {
     background-color: #333;
